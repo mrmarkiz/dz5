@@ -16,7 +16,7 @@ namespace dz5
             string action;
             do
             {
-                Console.Write("Enter what to do(add, remove, show, find): ");
+                Console.Write("Enter what to do(add, remove, show, find, exit): ");
                 action = Console.ReadLine();
                 switch (action)
                 {
@@ -31,6 +31,7 @@ namespace dz5
                         books = books - title;
                         break;
                     case "show":
+                        Console.WriteLine("Books list:");
                         books.Show();
                         break;
                     case "find":
@@ -111,7 +112,6 @@ namespace dz5
 
         public void Show()
         {
-            Console.WriteLine("Books list:");
             if (this.books.Length == 0)
             {
                 Console.WriteLine("Empty");
