@@ -36,7 +36,7 @@ namespace dz5
                         break;
 
                     case "cut":
-                        Console.Write("Enter magasine card to work with(first, second): ");
+                        Console.Write("Enter which magasine to work with(first, second): ");
                         magasine = Console.ReadLine();
                         Console.Write("Enter num of cutting: ");
                         int cut;
